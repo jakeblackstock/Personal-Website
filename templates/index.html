@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Your Personal Website</h1>
+    </header>
+
+    <main>
+        <p>
+            Hello, {{ user_name }}!
+        </p>
+
+        <p>
+            This is your home page.
+        </p>
+
+        <h2>
+            You can find more info about me here
+        </h2>
+
+        <div class="container">
+            <a href="{{ url_for('about.about') }}" class="textcard">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>CV</h3>
+                            <p2>Find out more information about me!</p2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <a href="https://github.com/jakeblackstock" class="textcard">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Github</h3>
+                            <p2>Code for some of my projects can be found here</p2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+
+        <br>
+        
+        <!-- textcards for projects -->
+        <h2>
+            You can find my projects here
+        </h2>
+
+        <div class="container">
+            <a href="" class="textcard">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Augmented Reality and Robotics</h3>
+                            <p2>An exciting project exploring how robotics can be controlled through an augmented reality interface</p2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <a href="" class="textcard">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Automated Assessment Tool</h3>
+                            <p2>A group project that attempted to streamline learning through creation of an automated assessment tool, providing instant feedback for student success</p2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <a href="" class="textcard">
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Future Project</h3>
+                            <p2>Description of future project</p2>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+
+        <br>
+
+        <footer>
+            Jake Blackstock 2023
+        </footer>
+
+    </main>
+</body>
+</html>

@@ -1,9 +1,8 @@
-# from app import app
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 home_routes = Blueprint('home_routes', __name__)
 
-# Define a route within the blueprint
 @home_routes.route('/')
 def home():
-    return 'Hello Jake'
+    user_name = "Jake"
+    return render_template('index.html', user_name=user_name)
