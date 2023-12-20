@@ -7,46 +7,47 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-
     <header>
-        <h1>Welcome to Your Personal Website</h1>
+        <nav>
+            <div class="logo">Your Logo</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home_routes.home') }}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <h1>Jake Blackstock</h1>
+
     <main>
-        <p>
-            Hello, {{ user_name }}!
-        </p>
-
-        <p>
-            This is your home page.
-        </p>
-
         <h2>
-            You can find more info about me here
+            About Me
         </h2>
+
+        <p>
+            Insert intro from CV in here
+        </p>
 
         <div class="container">
             <a href="{{ url_for('about.about') }}" class="textcard">
                 <table>
                     <tr>
                         <td>
-                            <h3>CV</h3>
+                            <img src="{{ url_for('static', filename='images/CV.png') }}" alt="CV Logo" width="150" height="150">
                             <p2>Find out more information about me!</p2>
                         </td>
                     </tr>
                 </table>
             </a>
-        </div>
 
-        <br>
-
-        <div class="container">
             <a href="https://github.com/jakeblackstock" class="textcard">
                 <table>
                     <tr>
                         <td>
-                            <h3>Github</h3>
-                            <p2>Code for some of my projects can be found here</p2>
+                            <img src="{{ url_for('static', filename='images/github.png') }}" alt="Github Logo" width="150" height="150">
+                            <p2>Some of my projects can be found here</p2>
                         </td>
                     </tr>
                 </table>
@@ -54,10 +55,22 @@
         </div>
 
         <br>
+
+        <h2>
+            Education
+        </h2>
+
+        <br>
+
+        <h2>
+            Skills
+        </h2>
+
+        <br>
         
         <!-- textcards for projects -->
         <h2>
-            You can find my projects here
+            Project Portfolio
         </h2>
 
         <div class="container">
@@ -65,32 +78,26 @@
                 <table>
                     <tr>
                         <td>
-                            <h3>Augmented Reality and Robotics</h3>
+                            <!-- <h3>Augmented Reality and Robotics</h3> -->
+                            <img src="{{ url_for('static', filename='images/ARlogo.png') }}" alt="AR Logo" width="150" height="150">
                             <p2>An exciting project exploring how robotics can be controlled through an augmented reality interface</p2>
                         </td>
                     </tr>
                 </table>
             </a>
-        </div>
 
-        <br>
-
-        <div class="container">
             <a href="" class="textcard">
                 <table>
                     <tr>
                         <td>
-                            <h3>Automated Assessment Tool</h3>
-                            <p2>A group project that attempted to streamline learning through creation of an automated assessment tool, providing instant feedback for student success</p2>
+                            <!-- <h3>Automated Assessment Tool</h3> -->
+                            <img src="{{ url_for('static', filename='images/AATlogo.png') }}" alt="AAT Logo" width="150" height="150">
+                            <p2>A group project that streamlined learning through an automated assessment tool</p2>
                         </td>
                     </tr>
                 </table>
             </a>
-        </div>
 
-        <br>
-
-        <div class="container">
             <a href="" class="textcard">
                 <table>
                     <tr>
