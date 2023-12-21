@@ -15,7 +15,7 @@ pip - package installer for python
 ```
 
 ```
-git - package manager (used to clone repository)
+git - package manager (used to clone repository, update this with more info)
 ```
 
 Set up a virtual environment, venv was used for this project. It can be setup using the following steps

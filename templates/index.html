@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Flask App</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='js/scroll.js') }}"></script>
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">Your Logo</div>
             <ul class="nav-links">
-                <li><a href="{{ url_for('home_routes.home') }}">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a id="home-button" href="{{ url_for('home_routes.home') }}">Home</a></li>
+                <li><a href="{{ url_for('about.about') }}">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>Jake Blackstock</h1>
-
     <main>
-        <h2>
-            About Me
-        </h2>
-
-        <p>
-            Insert intro from CV in here
-        </p>
+        <div data-simplebar>
+        <h1>
+            Jake Blackstock
+        </h1>
 
         <div class="container">
             <a href="{{ url_for('about.about') }}" class="textcard">
@@ -36,7 +34,7 @@
                     <tr>
                         <td>
                             <img src="{{ url_for('static', filename='images/CV.png') }}" alt="CV Logo" width="150" height="150">
-                            <p2>Find out more information about me!</p2>
+                            <p2>More information about me</p2>
                         </td>
                     </tr>
                 </table>
@@ -47,7 +45,7 @@
                     <tr>
                         <td>
                             <img src="{{ url_for('static', filename='images/github.png') }}" alt="Github Logo" width="150" height="150">
-                            <p2>Some of my projects can be found here</p2>
+                            <p2>Find my projects on Github</p2>
                         </td>
                     </tr>
                 </table>
@@ -55,50 +53,40 @@
         </div>
 
         <br>
-
-        <h2>
-            Education
-        </h2>
-
-        <br>
-
-        <h2>
-            Skills
-        </h2>
-
-        <br>
         
         <!-- textcards for projects -->
-        <h2>
+        <h2 id="projects">
             Project Portfolio
         </h2>
 
         <div class="container">
-            <a href="" class="textcard">
+            <a href="#" class="textcard">
                 <table>
                     <tr>
                         <td>
                             <!-- <h3>Augmented Reality and Robotics</h3> -->
-                            <img src="{{ url_for('static', filename='images/ARlogo.png') }}" alt="AR Logo" width="150" height="150">
-                            <p2>An exciting project exploring how robotics can be controlled through an augmented reality interface</p2>
+                            <img src="{{ url_for('static', filename='images/ARlogo.png') }}" alt="AR Logo" width="125" height="125">
+                            <!-- <p2>An exciting project exploring how robotics can be controlled through an augmented reality interface</p2> -->
+                            <p2>Controlling robotics through an augmented reality interface</p2>
                         </td>
                     </tr>
                 </table>
             </a>
 
-            <a href="" class="textcard">
+            <a href="#" class="textcard">
                 <table>
                     <tr>
                         <td>
                             <!-- <h3>Automated Assessment Tool</h3> -->
-                            <img src="{{ url_for('static', filename='images/AATlogo.png') }}" alt="AAT Logo" width="150" height="150">
-                            <p2>A group project that streamlined learning through an automated assessment tool</p2>
+                            <img src="{{ url_for('static', filename='images/AATlogo.png') }}" alt="AAT Logo" width="100" height="100">
+                            <!-- <p2>A group project that streamlined learning through an automated assessment tool</p2> -->
+                            <p2>Automated Assessment Tool</p2>
                         </td>
                     </tr>
                 </table>
             </a>
 
-            <a href="" class="textcard">
+            <a href="#" class="textcard">
                 <table>
                     <tr>
                         <td>
@@ -115,6 +103,18 @@
         <footer>
             Jake Blackstock 2023
         </footer>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
     </main>
 </body>
