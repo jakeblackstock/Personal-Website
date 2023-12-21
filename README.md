@@ -12,31 +12,26 @@ The following packages were used throughout this program
 
 ```
 pip - package installer for python
-
 ```
 
 ```
 git - package manager (used to clone repository)
-
 ```
 
 Set up a virtual environment, venv was used for this project. It can be setup using the following steps
 
 ```
 cd "C:\path\to\your\directory"
-
 ```
 
 Create the virtual environment, this example is named "myenv"
 ```
 python -m venv myenv
-
 ```
 
 Activate the virtual environment
 ```
 myenv\Scripts\activate
-
 ```
 
 ### Installing the program
@@ -78,5 +73,5 @@ Insert notes here about how to deploy this on a live server
 
 ## Authors
 
-* **Jake Blackstock** [Jake Blackstock](https://github.com/jakeblackstock)
+* [Jake Blackstock](https://github.com/jakeblackstock)
 
