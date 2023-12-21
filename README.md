@@ -8,44 +8,75 @@ The following instructions will get you a copy of this project up and running on
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The following packages were used throughout this program
 
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Install the virtual environment
+pip - package installer for python
 
 ```
-Instructions for venv installation
+
+```
+git - package manager (used to clone repository)
+
+```
+
+Set up a virtual environment, venv was used for this project. It can be setup using the following steps
+
+```
+cd "C:\path\to\your\directory"
+
+```
+
+Create the virtual environment, this example is named "myenv"
+```
+python -m venv myenv
+
+```
+
+Activate the virtual environment
+```
+myenv\Scripts\activate
+
+```
+
+### Installing the program
+
+Once the virtual environment is created and activated, we can clone the package and install the packages required for the program
+
+
+Navigate to the desired directory
+```
+cd "path/to/your/directory"
+```
+
+Use the "git clone" command followed by the repository URL
+```
+git clone https://github.com/jakeblackstock/Personal-Website
 ```
 
 Install the dependencies from requirements.txt
 
 ```
-Instructions for installing requirements
+pip install -r requirements.txt
 ```
 
 Run the flask application
 
 ```
-Instructions for running the app
+python .\app.py
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Insert notes here about how to deploy this on a live server
 
 ## Built With
 
-* [Flask](insert link) - The web framework used
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/) - The web framework used
+* [pip](https://pip.pypa.io/en/stable/) - Python Package Installer
 
 
 ## Authors
 
-* **Jake Blackstock** - Built entirely - [Jake Blackstock](https://github.com/jakeblackstock)
+* **Jake Blackstock** [Jake Blackstock](https://github.com/jakeblackstock)
 
